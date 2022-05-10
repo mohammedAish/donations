@@ -374,7 +374,7 @@ function refreshAnimation($wizard, index) {
 
     $wizard.find('.moving-tab').css('width', step_width);
     $('.moving-tab').css({
-        'transform': 'translate3d(-' + move_distance + 'px, 0, 0)',
+        'transform': 'translate3d(' + move_distance + 'px, 0, 0)',
         'transition': 'all 0.3s ease-out',
 
     });

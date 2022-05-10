@@ -16,7 +16,6 @@
     <link href="{{ asset('assets/admin/plugins/global/plugins.bundle.rtl.css') }}" rel="stylesheet"
             type="text/css" />
 	<!-- CSS Files -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
     <link href="{{ asset('assets/front2/css/bootstrap.min.css') }}" rel="stylesheet" />
 	<link href="{{ asset('assets/front2/css/gsdk-bootstrap-wizard.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/front2//css/demo.css') }}" rel="stylesheet" />
@@ -62,25 +61,7 @@ input[type="file"] {
 }
 </style>
 <body>
-    <header>
-        <div class="py-2 px-5">
-          <div class="d-flex justify-content-between px-4">
-            <div class="logo">
-                <img src="{{asset('assets/images/enayah-logo.png')}}" class="">
-            </div>
-            <div>
-               <h4> جمعية مرضى رعاية مرضى القلب (قلبي )</h4>
-            </div>
-            <div class="info d-flex">
 
-                <div class="pp px-2">
-                    <p>شارع البرق ، حي الروابي ، الرياض  <span class="px-2"> info@Qalbi.sa </span> <span class=""> +966550735885 </span></p>
-                </div>
-        </div>
-          </div>
-
-        </div>
-    </header>
 <div class="image-container set-full-height">
     <!--   Creative Tim Branding   -->
 
@@ -102,17 +83,17 @@ input[type="file"] {
                         <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
 
                     	<div class="wizard-header text-center pb-3">
-                            <h2 class="py-4" style="color:#666262;">تسجيل طلب مريض</h2>
+                            <h2 class="py-4" style="color:#666262;">Register a donation request</h2>
 
                     	</div>
 
 						<div class="wizard-navigation">
 							<ul>
-	                            <li ><a href="#about" data-toggle="tab">معلومات شخصية</a></li>
-                                <li><a href="#code" data-toggle="tab">كود التفعيل</a></li>
-	                            <li><a href="#contact" data-toggle="tab">معلومات الإتصال</a></li>
-	                            <li><a href="#data" data-toggle="tab">بيانات الطلب الطبي</a></li>
-                                <li><a href="#attachments" data-toggle="tab"> المرفقات</a></li>
+	                            <li ><a href="#about" data-toggle="tab">personal information</a></li>
+                                <li><a href="#code" data-toggle="tab">activation code</a></li>
+	                            <li><a href="#contact" data-toggle="tab">contact information</a></li>
+	                            <li><a href="#data" data-toggle="tab">The reason for the need for donations</a></li>
+                                <li><a href="#attachments" data-toggle="tab"> attachments</a></li>
 	                        </ul>
 
 						</div>
@@ -126,31 +107,31 @@ input[type="file"] {
 
                                 <div class="row">
                                     <div class="col-md-4 py-3  col-sm-12 px-2">
-                                        <label for="owner_name" class="form-label">اسم المريض</label>
+                                        <label for="owner_name" class="form-label">name</label>
                                         <input type="text" class="form-control"  name="owner_name" id="owner_name" placeholder="اسم المريض" />
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="" class="form-label"> الجنس</label>
+                                        <label for="" class="form-label">gender</label>
                                         <select class="form-select" aria-label="Default select example" id="gender" name="gender">
-                                            <option value="ذكر">ذكر</option>
-                                            <option value="أنثي">أنثي</option>
+                                            <option value="male">male</option>
+                                            <option value="female">female</option>
                                           </select>
                                     </div>
 
                                     <div class="col-md-4  py-3 col-sm-12 form-password">
-                                        <label for="password" class="form-label">رقم الجوال</label>
+                                        <label for="password" class="form-label"> phone</label>
                                         <input type="text" class="form-control" name="phone" id="phone"  placeholder="9865442713093" />
 
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12">
-                                        <label for="your_avatar" class="form-label">البريد الالكتروني</label>
+                                        <label for="your_avatar" class="form-label">email</label>
                                         <div class="form-file">
                                             <input type="email" class="form-control" name="email" id="email" placeholder="mo@gmail.com"/>
 
                                         </div>
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label"> رقم الهوية</label>
+                                        <label for="username" class="form-label">id number</label>
                                         <input type="text" class="form-control" name="id_number" id="" placeholder=" " />
                                     </div>
 
@@ -160,7 +141,7 @@ input[type="file"] {
                             <div class="tab-pane container" id="code">
                                 <form method="POST" class="formm" id="signup-form2" action="" >
                                 <div class="row px-5 mt-5 pt-5">
-                                    <label class="col-2 form-label" style="font-size: 20px;padding-top: 7px;color: #504e4e;">ادخل كود التفعيل</label>
+                                    <label class="col-2 form-label" style="font-size: 20px;padding-top: 7px;color: #504e4e;">activation code</label>
                                     <div class="col-4">
                                         <input class="form-control" type="text" name="code"/>
                                         <p>يرجي مراجعة البريد اللكتروني</p>
@@ -183,12 +164,12 @@ input[type="file"] {
 
                                 <div class="row">
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="email" class="form-label">الجنسية</label>
+                                        <label for="email" class="form-label">nationality</label>
                                         <input type="text" class="form-control" name="nationality" id="nationality"  placeholder="الجنسية " />
                                     </div>
 
                                     <div class="col-md-4 py-3  col-sm-12 px-2">
-                                        <label for="username" class="form-label">المدينة</label>
+                                        <label for="username" class="form-label">city</label>
                                         <select class="form-select" name="city" id="city" aria-label="Default select example">
                                             <option value="الرياض">الرياض</option>
                                             <option value="الدرعية">الدرعية </option>
@@ -214,7 +195,7 @@ input[type="file"] {
                                           </select>
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label"> الحي</label>
+                                        <label for="username" class="form-label"> neighborhood</label>
                                         <select class="form-select" name="neighborhood" id="neighborhood" aria-label="Default select example">
                                             <option value="حي الملز.">حي الملز.</option>
                                             <option value="حي الفاخرية.">حي الفاخرية.</option>
@@ -292,26 +273,26 @@ input[type="file"] {
                                     </div>
 
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="email" class="form-label">اسم أقرب شخص للاتصال</label>
+                                        <label for="email" class="form-label">The name of the closest contact person</label>
                                         <input type="text" class="form-control" name="relativeـname" id="email" placeholder=" " />
                                     </div>
                                     <div class="col-md-4  py-3 col-sm-12 form-password">
-                                        <label for="phoneـrelative" class="form-label">رقم الجوال لأقرب شخص</label>
+                                        <label for="phoneـrelative" class="form-label">The mobile number of the nearest person</label>
                                         <input type="text" class="form-control" name="phoneـrelative" id="phoneـrelative"  placeholder="" />
 
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label"> صلة القرابة</label>
+                                        <label for="username" class="form-label">relative relation</label>
                                         <input type="text" class="form-control" name="relative" id="email" placeholder=" " />
                                     </div>
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label"> الراتب الشهري</label>
+                                        <label for="username" class="form-label">salary</label>
                                         <input type="text" class="form-control" name="salary" id="email" placeholder=" " />
                                     </div>
 
 
                                     <div class="col-md-4 py-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label"> العمل الحالي الفعلي</label>
+                                        <label for="username" class="form-label"> current job</label>
                                         <input type="text" class="form-control" name="current_job" id="email" placeholder=" " />
                                     </div>
 
@@ -323,7 +304,7 @@ input[type="file"] {
 
                                     <div class=" row">
                                         <div class="col-md-8 d-flex py-3  col-sm-12 px-2">
-                                            <label for="username" class="form-label mt-5"style="width:180px">سبب طلب التبرعات</label>
+                                            <label for="username" class="form-label mt-5"style="width:180px">Reason for asking for donations</label>
                                             <textarea  class="form-control" name="owner_condition" rows="8"></textarea>
                                         </div>
                                     </div>
@@ -331,27 +312,27 @@ input[type="file"] {
                             <div class="tab-pane px-2" id="attachments">
                                 <div class="row px-2" style="">
                                     <div class="col-md-4 py-2 my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">صورة هوية المريض</label>
+                                        <label for="username" class="form-label">id photo</label>
                                         <input type="file" name="id_photo" accept="image/png, image/jpeg, application/pdf">
                                     </div>
                                     <div class="col-md-4 py-2  my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">تقرير طبي حديث و مفصل </label>
+                                        <label for="username" class="form-label">medical report</label>
                                         <input type="file" name="medical_report" accept="image/png, image/jpeg, application/pdf">
                                     </div>
                                     <div class="col-md-4 py-2  my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">صورة من عقد إيجار السكن / فاتورة كهرباء</label>
+                                        <label for="username" class="form-label">housing contract</label>
                                         <input type="file" name="housing_contract" accept="image/png, image/jpeg, application/pdf">
                                     </div>
                                     <div class="col-md-4 py-2  my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">تعريف من الكفيل بالراتب للمريض أو ولي أمره  </label>
+                                        <label for="username" class="form-label">definition salary </label>
                                         <input type="file" name="definition_salary" accept="image/png, image/jpeg, application/pdf">
                                     </div>
                                     <div class="col-md-4 py-2  my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">صورة تأشيرة الزيارة  </label>
+                                        <label for="username" class="form-label">visa photo </label>
                                         <input type="file" name="visa_photo" accept="image/png, image/jpeg, application/pdf">
                                     </div>
                                     <div class="col-md-4 py-2  my-3 col-sm-12 px-2">
-                                        <label for="username" class="form-label">إقامته او شهادة الميلاد أو جواز السفر /إذا كان المريض طفلا  </label>
+                                        <label for="username" class="form-label">other </label>
                                         <input type="file" name="other" accept="image/png, image/jpeg, application/pdf">
                                     </div>
 
@@ -361,16 +342,16 @@ input[type="file"] {
                         </div>
                         <div class="wizard-footer height-wizard">
                             <div class="pull-right">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='السابق' />
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='previous' />
 
                             </div>
 
                             <div class="pull-left">
-                                <input type='button' id="submit1" class='btcode btn btn-next  btn-fill btn-warning btn-wd btn-sm' name='next' value='التالي' />
-                                <input type='button' id="sendd" class='btcode btn btn-next  btn-fill btn-warning btn-wd btn-sm' name='next' value='التالي' />
-                                <input type='button' id="submit3"   class='btcode btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='التالي' />
+                                <input type='button' id="submit1" class='btcode btn btn-next  btn-fill btn-warning btn-wd btn-sm' name='next' value='next' />
+                                <input type='button' id="sendd" class='btcode btn btn-next  btn-fill btn-warning btn-wd btn-sm' name='next' value='next' />
+                                <input type='button' id="submit3"   class='btcode btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='next' />
 
-                                <input type='button' id="save" class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='حفظ'>
+                                <input type='button' id="save" class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='save'>
                             </div>
                             <div class="clearfix"></div>
                         </div>
